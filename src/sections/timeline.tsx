@@ -76,6 +76,24 @@ function Timeline({ darkMode }: TimelineProps) {
           </div>
 
           <div className="flex flex-col items-start m-2">
+            <span className={`text-xl font-normal rounded-md`}>Typescript</span>
+            <span
+              className={`text-[0.75rem] font-light rounded-md ${darkMode ? "hover:text-neutral-300" : "hover:text-neutral-600"}`}
+            >
+              Now (Learning)
+            </span>
+            <ul className="flex flex-col items-start m-2">
+              <li
+                className={
+                  darkMode ? "hover:text-neutral-300" : "hover:text-neutral-600"
+                }
+              >
+                React Three Fiber (R3F)
+              </li>
+            </ul>
+          </div>
+
+          <div className="flex flex-col items-start m-2">
             <span className={`text-xl font-normal rounded-md`}>Backend</span>
             <span
               className={`text-[0.75rem] font-light rounded-md ${darkMode ? "hover:text-neutral-300" : "hover:text-neutral-600"}`}
