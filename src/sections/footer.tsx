@@ -1,7 +1,3 @@
-type TimelineProps = {
-  darkMode: boolean;
-};
-
 function Footer() {
   return (
     <>
