@@ -40,6 +40,7 @@ function App() {
       <main>
         <Timeline darkMode={darkModeTheme} />
         <Skills darkMode={darkModeTheme} />
+        <Projects darkMode={darkModeTheme} />
       </main>
     </div>
   );
