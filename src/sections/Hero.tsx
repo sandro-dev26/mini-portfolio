@@ -1,5 +1,3 @@
-import { useState, useEffect } from "react";
-
 type HeroProps = {
   darkMode: boolean;
 };
