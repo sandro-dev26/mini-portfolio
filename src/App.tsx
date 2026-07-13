@@ -3,6 +3,7 @@ import "./App.css";
 import Hero from "./sections/Hero";
 import Timeline from "./sections/timeline";
 import Skills from "./sections/skills";
+import Projects from "./sections/project";
 import SunIcon from "./components/sunicon";
 import MoonIcon from "./components/moonicon";
 
