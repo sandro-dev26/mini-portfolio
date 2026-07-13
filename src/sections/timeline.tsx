@@ -48,7 +48,7 @@ function Timeline({ darkMode }: TimelineProps) {
             <span
               className={`text-[0.75rem] font-light rounded-md ${darkMode ? "hover:text-neutral-300" : "hover:text-neutral-600"}`}
             >
-              Early 2026 - Now
+              Early 2026 - Present
             </span>
             <ul className="flex flex-col items-start m-2">
               <li
@@ -80,7 +80,7 @@ function Timeline({ darkMode }: TimelineProps) {
             <span
               className={`text-[0.75rem] font-light rounded-md ${darkMode ? "hover:text-neutral-300" : "hover:text-neutral-600"}`}
             >
-              Now (Learning)
+              Present (Learning)
             </span>
             <ul className="flex flex-col items-start m-2">
               <li
