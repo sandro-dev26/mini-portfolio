@@ -7,7 +7,15 @@ type HeroProps = {
 function Hero({ darkMode }: HeroProps) {
   return (
     <>
-      <h1 className={`m-4 text-3xl font-semibold`}>My Mini Portfolio</h1>
+      <header className="m-4 w-[80%]">
+        <h1 className={`text-3xl font-semibold mb-2`}>My Mini Portfolio</h1>
+        <span
+          className={`text-sm font-light hover:text-neutral-300 ${darkMode ? "hover:text-neutral-300" : "hover:text-neutral-600"}`}
+        >
+          A small portfolio showcasing my journey and progress through web
+          development.
+        </span>
+      </header>
     </>
   );
 }
