@@ -4,6 +4,7 @@ import Hero from "./sections/Hero";
 import Timeline from "./sections/timeline";
 import Skills from "./sections/skills";
 import Projects from "./sections/project";
+import Footer from "./sections/footer";
 import SunIcon from "./components/sunicon";
 import MoonIcon from "./components/moonicon";
 
@@ -42,6 +43,7 @@ function App() {
         <Skills darkMode={darkModeTheme} />
         <Projects darkMode={darkModeTheme} />
       </main>
+      <Footer />
     </div>
   );
 }
