@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import Hero from "./sections/Hero";
+import Timeline from "./sections/timeline";
 import SunIcon from "./components/icons/sunicon";
 import MoonIcon from "./components/icons/moonicon";
 
@@ -22,6 +23,9 @@ function App() {
         {darkModeTheme ? <MoonIcon /> : <SunIcon />}
       </button>
       <Hero darkMode={darkModeTheme} />
+      <main>
+        <Timeline darkMode={darkModeTheme} />
+      </main>
     </div>
   );
 }
