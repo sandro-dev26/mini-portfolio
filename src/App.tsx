@@ -2,8 +2,8 @@ import { useState } from "react";
 import "./App.css";
 import Hero from "./sections/Hero";
 import Timeline from "./sections/timeline";
-import SunIcon from "./components/icons/sunicon";
-import MoonIcon from "./components/icons/moonicon";
+import SunIcon from "./components/sunicon";
+import MoonIcon from "./components/moonicon";
 
 function App() {
   const [darkModeTheme, setDarkModeTheme] = useState<boolean>(true);
