@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Mini F1 Dashboard",
+    "url": "https://mini-f1-dashboard.vercel.app",
+    "github": "https://github.com/sandro-dev26/mini-f1-dashboard",
+    "description": "An unofficial fan-made Formula 1 dashboard built with React, TypeScript, and Tailwind CSS to display race and championship data."
+  },
+  {
+    "name": "DevVault",
+    "url": "https://vault-dev-app.vercel.app",
+    "github": "https://github.com/sandro-dev26/dev-vault",
+    "description": "My first project using react router which contains data about different languages, frameworks, databases, etc."
+  },
+  {
+    "name": "JetHub",
+    "url": "https://jethub-app.vercel.app",
+    "github": "https://github.com/sandro-dev26/jethub",
+    "description": "Free open-source web app that has data about Aircrafts, Airlines & Airports and is set to be updated, expanding data and bringing new features and design."
+  }
+]
