@@ -1,3 +1,5 @@
+import timelineData from "../data/timeline.json";
+
 type TimelineProps = {
   darkMode: boolean;
 };
@@ -11,133 +13,135 @@ function Timeline({ darkMode }: TimelineProps) {
         <span className="m-2 mb-4 text-2xl font-light">Timeline</span>
 
         <div className="grid grid-cols-1 md:grid-cols-2">
-          <div className="flex flex-col m-2">
-            <span className={`text-xl font-normal rounded-md`}>Javascript</span>
-            <span
-              className={`text-[0.75rem] font-light rounded-md ${darkMode ? "hover:text-neutral-300" : "hover:text-neutral-600"}`}
-            >
-              Mid 2025 - Early 2026
-            </span>
-            <ul className="flex flex-col items-start m-2">
-              <li
-                className={
-                  darkMode ? "hover:text-neutral-300" : "hover:text-neutral-600"
-                }
+          {timelineData && (
+            <div className="flex flex-col m-2">
+              <span className={`text-xl font-normal rounded-md`}>
+                {timelineData.mid2025.title}
+              </span>
+              <span
+                className={`text-[0.75rem] font-light rounded-md ${darkMode ? "hover:text-neutral-300" : "hover:text-neutral-600"}`}
               >
-                Html
-              </li>
-              <li
-                className={
-                  darkMode ? "hover:text-neutral-300" : "hover:text-neutral-600"
-                }
-              >
-                Css
-              </li>
-              <li
-                className={
-                  darkMode ? "hover:text-neutral-300" : "hover:text-neutral-600"
-                }
-              >
-                Javascript
-              </li>
-            </ul>
-          </div>
+                {timelineData.mid2025.timeline}
+              </span>
+              <ul className="flex flex-col items-start m-2">
+                {timelineData.mid2025.stackLearned.map((stack) => (
+                  <li
+                    className={
+                      darkMode
+                        ? "hover:text-neutral-300"
+                        : "hover:text-neutral-600"
+                    }
+                  >
+                    {stack}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
 
-          <div className="flex flex-col items-start m-2">
-            <span className={`text-xl font-normal rounded-md`}>Typescript</span>
-            <span
-              className={`text-[0.75rem] font-light rounded-md ${darkMode ? "hover:text-neutral-300" : "hover:text-neutral-600"}`}
-            >
-              Early 2026 - Present
-            </span>
-            <ul className="flex flex-col items-start m-2">
-              <li
-                className={
-                  darkMode ? "hover:text-neutral-300" : "hover:text-neutral-600"
-                }
+          {timelineData && (
+            <div className="flex flex-col m-2">
+              <span className={`text-xl font-normal rounded-md`}>
+                {timelineData.early2026.title}
+              </span>
+              <span
+                className={`text-[0.75rem] font-light rounded-md ${darkMode ? "hover:text-neutral-300" : "hover:text-neutral-600"}`}
               >
-                Typescript
-              </li>
-              <li
-                className={
-                  darkMode ? "hover:text-neutral-300" : "hover:text-neutral-600"
-                }
-              >
-                React
-              </li>
-              <li
-                className={
-                  darkMode ? "hover:text-neutral-300" : "hover:text-neutral-600"
-                }
-              >
-                Tailwind Css
-              </li>
-            </ul>
-          </div>
+                {timelineData.early2026.timeline}
+              </span>
+              <ul className="flex flex-col items-start m-2">
+                {timelineData.early2026.stackLearned.map((stack) => (
+                  <li
+                    className={
+                      darkMode
+                        ? "hover:text-neutral-300"
+                        : "hover:text-neutral-600"
+                    }
+                  >
+                    {stack}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
 
-          <div className="flex flex-col items-start m-2">
-            <span className={`text-xl font-normal rounded-md`}>Typescript</span>
-            <span
-              className={`text-[0.75rem] font-light rounded-md ${darkMode ? "hover:text-neutral-300" : "hover:text-neutral-600"}`}
-            >
-              Present (Learning)
-            </span>
-            <ul className="flex flex-col items-start m-2">
-              <li
-                className={
-                  darkMode ? "hover:text-neutral-300" : "hover:text-neutral-600"
-                }
+          {timelineData && (
+            <div className="flex flex-col m-2">
+              <span className={`text-xl font-normal rounded-md`}>
+                {timelineData.present.title}
+              </span>
+              <span
+                className={`text-[0.75rem] font-light rounded-md ${darkMode ? "hover:text-neutral-300" : "hover:text-neutral-600"}`}
               >
-                React Three Fiber (R3F)
-              </li>
-            </ul>
-          </div>
+                {timelineData.present.timeline}
+              </span>
+              <ul className="flex flex-col items-start m-2">
+                {timelineData.present.stackLearned.map((stack) => (
+                  <li
+                    className={
+                      darkMode
+                        ? "hover:text-neutral-300"
+                        : "hover:text-neutral-600"
+                    }
+                  >
+                    {stack}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
 
-          <div className="flex flex-col items-start m-2">
-            <span className={`text-xl font-normal rounded-md`}>Backend</span>
-            <span
-              className={`text-[0.75rem] font-light rounded-md ${darkMode ? "hover:text-neutral-300" : "hover:text-neutral-600"}`}
-            >
-              Future
-            </span>
-            <ul className="flex flex-col items-start m-2">
-              <li
-                className={
-                  darkMode ? "hover:text-neutral-300" : "hover:text-neutral-600"
-                }
+          {timelineData && (
+            <div className="flex flex-col m-2">
+              <span className={`text-xl font-normal rounded-md`}>
+                {timelineData.future.title}
+              </span>
+              <span
+                className={`text-[0.75rem] font-light rounded-md ${darkMode ? "hover:text-neutral-300" : "hover:text-neutral-600"}`}
               >
-                Next.js
-              </li>
-              <li
-                className={
-                  darkMode ? "hover:text-neutral-300" : "hover:text-neutral-600"
-                }
+                {timelineData.future.timeline}
+              </span>
+              <ul className="flex flex-col items-start m-2">
+                {timelineData.future.stackLearned.map((stack) => (
+                  <li
+                    className={
+                      darkMode
+                        ? "hover:text-neutral-300"
+                        : "hover:text-neutral-600"
+                    }
+                  >
+                    {stack}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+
+          {timelineData && (
+            <div className="flex flex-col m-2">
+              <span className={`text-xl font-normal rounded-md`}>
+                {timelineData.farFuture.title}
+              </span>
+              <span
+                className={`text-[0.75rem] font-light rounded-md ${darkMode ? "hover:text-neutral-300" : "hover:text-neutral-600"}`}
               >
-                Node.js
-              </li>
-              <li
-                className={
-                  darkMode ? "hover:text-neutral-300" : "hover:text-neutral-600"
-                }
-              >
-                Express
-              </li>
-              <li
-                className={
-                  darkMode ? "hover:text-neutral-300" : "hover:text-neutral-600"
-                }
-              >
-                SQL (Postgre SQL)
-              </li>
-              <li
-                className={
-                  darkMode ? "hover:text-neutral-300" : "hover:text-neutral-600"
-                }
-              >
-                Nest.js
-              </li>
-            </ul>
-          </div>
+                {timelineData.farFuture.timeline}
+              </span>
+              <ul className="flex flex-col items-start m-2">
+                {timelineData.farFuture.stackLearned.map((stack) => (
+                  <li
+                    className={
+                      darkMode
+                        ? "hover:text-neutral-300"
+                        : "hover:text-neutral-600"
+                    }
+                  >
+                    {stack}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
         </div>
       </div>
     </>

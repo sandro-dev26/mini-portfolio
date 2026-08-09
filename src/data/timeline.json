@@ -1,0 +1,41 @@
+{
+  "mid2025": {
+    "title": "Javascript",
+    "timeline": "Mid 2025 - Early 2026",
+    "stackLearned": ["HTML5", "CSS", "Javascript"]
+  },
+  "early2026": {
+    "title": "Typescript",
+    "timeline": "Early 2026 - Present",
+    "stackLearned": [
+      "Typescript",
+      "React",
+      "Tailwind CSS",
+      "React Three Fiber (Basics)",
+      "React Router",
+      "Motion (Framer Motion)"
+    ]
+  },
+  "present": {
+    "title": "React",
+    "timeline": "Present",
+    "stackLearned": ["Next.js"]
+  },
+  "future": {
+    "title": "Backend",
+    "timeline": "Future",
+    "stackLearned": [
+      "Node.js",
+      "Express",
+      "Nest.js",
+      "SQL (Postgres)",
+      "Java",
+      "Spring Boot"
+    ]
+  },
+  "farFuture": {
+    "title": "App Development",
+    "timeline": "Future",
+    "stackLearned": ["React Native", "Kotlin", "Swift (Not 100% Sure)"]
+  }
+}
